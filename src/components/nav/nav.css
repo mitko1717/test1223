@@ -1,0 +1,277 @@
+main {
+  background: rgb(2, 0, 36);
+  min-height: 90vh;
+  width: 100vw;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.navlinks {
+  text-align: center;
+  text-decoration-style: none;
+  padding: 1rem 0;
+}
+.navlinks ul a {
+  font-size: 3rem;
+  color: white;
+  text-decoration: none;
+  padding: 0 2rem 0.5rem;
+  letter-spacing: 0.15rem;
+  box-shadow: 12px 9px black, -0.9rem 0.5rem 0.8rem black;
+  cursor: pointer;
+  transition: 0.5s all ease-in-out;
+}
+
+.switcher {
+  border-bottom: 2px solid transparent;
+}
+
+.switcher .selected {
+  border-bottom: 2px solid white;
+  transition: 0.5s all ease-in-out;
+}
+
+.selected {
+  opacity: 0.6;
+  border-bottom: 2px solid white;
+  transition: 0.5s all ease-in-out;
+}
+
+.switcher:hover {
+  opacity: 0.6;
+}
+
+.sales {
+  text-align: center;
+  font-size: 0.6rem;
+  padding: 1.5rem 0 0;
+}
+
+.sales h2 {
+  font-weight: 100;
+  padding: 0.3rem 0 1rem;
+}
+.sales h2 strong {
+  color: burlywood;
+}
+
+.ren {
+  /* height: 60vh; */
+  width: 100%;
+  padding: 1rem 0;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.item {
+  border: burlywood solid 1px;
+  height: 7rem;
+  display: flex;
+  justify-content: space-between;
+  width: 95vw;
+  margin: 0.5rem 0;
+}
+
+.item img {
+  height: 5rem;
+  width: 5rem;
+}
+.item-img {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 15%;
+}
+
+.item h1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 20%;
+  height: 100%;
+}
+
+.amount {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 30%;
+  height: 100%;
+}
+
+.minus-plus {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.minus-plus button {
+  height: 4rem;
+  width: 3.5rem;
+  font-size: 3.5rem;
+  background: none;
+  border: none;
+  outline: none;
+  color: burlywood;
+  cursor: pointer;
+}
+.minus-plus button:hover {
+  opacity: 0.6;
+}
+
+.price {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 20%;
+  height: 100%;
+  font-size: 1.8rem;
+  margin-right: 2%;
+}
+
+.delete {
+  height: 3rem;
+  width: 4rem;
+  font-size: 2rem;
+  background: none;
+  border: none;
+  outline: none;
+  color: burlywood;
+  cursor: pointer;
+  padding: 0.5rem;
+}
+
+.delete:hover {
+  opacity: 0.6;
+}
+
+@media (max-width: 768px) {
+  .navlinks ul a {
+    font-size: 2.2rem;
+    padding: 0 1.6rem 0.3rem;
+    letter-spacing: 0.2rem;
+  }
+
+  .sales {
+    font-size: 0.55rem;
+    padding: 1rem 0 0.5rem;
+  }
+
+  .sales h2 {
+    letter-spacing: 0.02rem;
+    padding: 0.3rem 0 0.5rem;
+  }
+
+  .item {
+    width: 98vw;
+    margin: 0.8rem 0;
+  }
+
+  .amount {
+    width: 25%;
+  }
+
+  .item h1 {
+    font-size: 1.3rem;
+  }
+
+  .price {
+    font-size: 1.6rem;
+  }
+
+  .minus-plus button {
+    font-size: 3rem;
+  }
+
+  .item-img {
+    transform: scale(0.7);
+  }
+
+  .delete {
+    height: 2rem;
+    width: 2.3rem;
+    font-size: 1.6rem;
+    padding: 0.5rem 0;
+  }
+
+  .item h1 {
+    font-size: 1.2rem;
+  }
+
+  .price {
+    width: 17%;
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 415px) {
+  .navlinks {
+    padding: 0.2rem 0;
+  }
+  .navlinks ul a {
+    font-size: 1.8rem;
+    padding: 0 1.5rem 0.2rem;
+    letter-spacing: 0.1rem;
+  }
+
+  .sales {
+    font-size: 0.45rem;
+    padding: 1rem 0 0.5rem;
+  }
+
+  .sales h2 {
+    letter-spacing: 0.03rem;
+    padding: 0.3rem 0 0.5rem;
+  }
+
+  .item {
+    width: 98vw;
+    height: 6.5rem;
+    margin: 0.8rem 0;
+  }
+
+  .item-img {
+    transform: scale(0.5);
+  }
+
+  .amount {
+    width: 25%;
+    font-size: 1rem;
+  }
+
+  .amount p {
+    font-size: 0.8rem;
+  }
+
+  .item h1 {
+    font-size: 1rem;
+  }
+
+  .price {
+    width: 17%;
+    font-size: 1.2rem;
+  }
+
+  .delete {
+    height: 2rem;
+    width: 2rem;
+    font-size: 1.4rem;
+    padding: 0.1rem;
+  }
+
+  .minus-plus button {
+    height: 3rem;
+    width: 2.5rem;
+    font-size: 2.5rem;
+  }
+}
